@@ -1,0 +1,241 @@
+h1{
+    text-decoration: underline;
+}
+
+
+/*.........................box-model..................*/
+.box-model{
+    background-color: #B5C0D0 ;
+    width: 350px;
+    height: 250px;
+    border: 8px solid #CCD3CA;
+    padding: 20px;
+    margin: 20px;
+   
+}
+p{
+    font-size: 25px;
+    text-align: center;
+      
+}
+
+
+
+/*.......................Display Type................ */
+
+.display{
+    width: 400px;
+    padding: 10px;
+    margin: 30px;
+    border: 2px solid #624E88;
+    
+}
+.inline>div{
+    display: inline;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid #624E88;   
+
+}
+.block>div{
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 30px;
+    border: 2px solid #624E88;  
+}
+
+.inline-block>div{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 30px;
+    border: 2px solid #624E88; 
+}
+
+#box1{
+    background-color: #8967B3;
+
+}
+#box2{
+    background-color: #CB80AB;
+}
+
+
+/*.......................Display Positioning................ */
+
+.position>div{
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+}
+
+#static{
+    position: static;
+    top: 10px;
+    background-color: rgb(232, 119, 119);
+}
+
+
+#relative{
+    position: relative;
+    top: 20px;
+    left:20px;
+    background-color: rgb(164, 119, 232);
+    font-size: 20px;
+}
+
+
+
+#fixed{
+    position: fixed;
+    top: 20px;
+    left: 80%;
+    background-color: #FFB26B;
+}
+
+
+#absolute{
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(114, 177, 248);
+    font-size: 20px;
+}
+
+/*.......................Flex Direction & Container................ */
+
+img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+.flex1{
+    width: 500px;
+    height: 150px;
+    background-color: whitesmoke;
+    border: 2px solid rgb(165, 161, 161);
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    justify-content: center;
+
+}
+
+
+.flex2{
+    width: 150px;
+    height: 400px;
+    background-color: whitesmoke;
+    border: 2px solid rgb(165, 161, 161);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    justify-content: space-around;
+
+}
+.flex3{
+    width: 500px;
+    height: 200px;
+    background-color: whitesmoke;
+    border: 2px solid rgb(165, 161, 161);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/*.......................Flex grow & shrink................ */
+.flex-item{
+    width: 500px;
+    height: 100px;
+    background-color: rgb(239, 232, 232);
+    border: 1px solid black;
+    display: flex;
+    margin-bottom: 10px;
+
+} 
+
+
+.flex-item>div{
+    width: 100px;
+    height: 100px;   
+   
+}
+
+.flex-item>div#div1{
+    
+    background-color:rgb(192, 47, 124);
+}
+.flex-item>div#div2{
+   
+    background-color:rgb(244, 125, 137);
+    flex-grow: 2;
+}
+.flex-item>div#div3{
+    background-color:rgb(192, 255, 193);
+
+    
+}
+
+#flex-item2{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(239, 232, 232);
+    border: 1px solid #0a0a0a;
+    display: flex;
+  }
+  
+  #flex-item2>div {
+    flex-shrink: 1;
+    flex-basis: 100px;
+  }
+  
+  #flex-item2>div#div2 {
+    flex-shrink: 2;
+  }
+/*.......................Order................ */
+
+.order{
+    width: 800px;
+    border: 2px solid #624E88;
+    display: flex;
+    
+}
+.items>div{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    margin:20px;
+    border: 2px solid #624E88;
+    display: inline-block;
+    font-size: 40px;
+    text-align: center;
+    
+}
+  
+#box3{
+    background-color: #E59BE9;
+    order: -2;
+}
+#box4{
+    order: -1;
+    background-color: #FFCDEA;
+}
